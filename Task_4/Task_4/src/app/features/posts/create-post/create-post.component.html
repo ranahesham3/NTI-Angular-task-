@@ -1,0 +1,21 @@
+<form [formGroup]="postForm">
+  <div class="form-group">
+    <label for="exampleInputtitle">title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputtitle"
+      formControlName="title"
+    />
+    <label for="exampleInputbody">body</label>
+    <input
+      type="body"
+      class="form-control"
+      id="exampleInputbody"
+      formControlName="body"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onSubmit()">
+    Submit
+  </button>
+</form>
